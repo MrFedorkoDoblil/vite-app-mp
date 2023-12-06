@@ -1,0 +1,118 @@
+@import '../../sass/variables.scss';
+
+.schedule{
+    padding-top: 100px;
+    background: url(../../assets/banner_3.png) center center/cover no-repeat;
+    padding:180px  10px;
+    margin-top: -110px;
+    &__wrap{
+        display: flex;
+        align-items:stretch;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    &__day{
+        width: 150px;
+        font-size: 38px;
+        text-align: start;
+        font-weight: 700;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &__items{
+        margin-left: 30px;
+    }
+    &__item{
+        display: flex;
+        margin-top: 30px;
+    }
+    &__time{
+        width: 90px;
+        font-size: 20px;
+        color: $substrate-color;
+        font-weight: 700;
+    }
+    &__desc{
+        max-width: 600px;
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 1200px) {
+ 
+}
+@media (max-width: 991px) {
+    .schedule{
+
+        &__wrap{
+            display: flex;
+            align-items:stretch;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+    
+        &__day{
+            width: 110px;
+            font-size: 30px;
+        }
+    
+        &__items{
+            margin-left: 30px;
+        }
+        &__item{
+            display: flex;
+            margin-top: 30px;
+        }
+        &__time{
+            width: 80px;
+            font-size: 17px;
+            color: $substrate-color;
+            font-weight: 700;
+        }
+        &__desc{
+            width: 90%;
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .schedule{
+        padding-top: 100px;
+        background: url(../../assets/banner_3.png) center center/cover no-repeat;
+        padding:180px  10px;
+        margin-top: -110px;
+        &__wrap{
+            display: flex;
+            align-items:stretch;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+    
+        &__day{
+            width: 50px;
+            font-size: 30px;
+            padding: 10px;
+        }
+        &__time{
+            width: 60px;
+            font-size: 15px;
+        }
+        &__desc{
+            width: 90%;
+            font-size: 15px;
+        }
+    }
+
+}
